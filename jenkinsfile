@@ -21,7 +21,7 @@ pipeline {
 
                 // Restart app with pm2
                 sh '''
-                ssh ubuntu@3.88.212.66 <<EOF
+                ssh ubuntu@3.88.212.66 << 'EOF'
                   cd /home/deploy/shopping-app
                   npm install
                   pm2 stop shopping-app || true
